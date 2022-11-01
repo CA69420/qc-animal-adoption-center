@@ -1,0 +1,64 @@
+.navbarWrapper {
+	display: flex;
+	align-items: center;
+	background: rgb(163, 209, 255);
+	color: rgb(0, 34, 68);
+}
+
+.logoWrapper {
+	display: flex;
+	align-items: center;
+	padding: 0.5rem;
+}
+
+.logo {
+	cursor: pointer;
+}
+
+.logoWrapper .logoTitle {
+	margin-left: 0.5rem;
+	font-size: 1.2rem;
+	font-weight: 600;
+	cursor: pointer;
+}
+
+.mobileMenuWrapper {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-right: 0.5rem;
+	margin-left: auto;
+}
+
+.mobileMenu {
+	font-size: 2rem;
+	cursor: pointer;
+}
+
+.desktopMenuWrapper {
+	display: none;
+}
+
+.desktopMenuWrapper ul li {
+	list-style: none;
+}
+
+@media (min-width: 40em) {
+	.burgerMenuWrapper,
+	.mobileMenu {
+		display: none;
+	}
+
+	.desktopMenuWrapper {
+		display: block;
+		margin-right: 0.5rem;
+	}
+
+	.desktopMenuWrapper ul {
+		display: flex;
+	}
+
+	.desktopMenuWrapper ul li a {
+		margin: 0.5rem;
+	}
+}
